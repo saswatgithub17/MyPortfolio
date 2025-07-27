@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saswat Suman Dwibedy's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Enhanced Loader with 3D Tech Person -->
+    <div id="loader">
+        <div class="loader-container">
+            <div class="loader-tech-person">
+                <div class="tech-person"></div>
+            </div>
+            <div class="loader-content">
+                <div class="tech-loader">
+                    <div class="outer-ring"></div>
+                    <div class="inner-ring"></div>
+                    <div class="center-core"></div>
+                </div>
+                <div class="loader-text">SYSTEM INITIALIZATION</div>
+                <div class="progress-bar">
+                    <div class="progress" id="loader-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-gradient fw-bold" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon text-light"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="floating floating-1"></div>
+        <div class="floating floating-2"></div>
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h6 class="text-gradient mb-3">HI, I'M A COMPUTER SCIENCE STUDENT</h6>
+                    <h1 class="hero-title">Crafting <span class="text-gradient">Digital Futures</span> With Code</h1>
+                    <p class="hero-subtitle">I build innovative solutions using modern Web Technologies while pursuing my passion for Computer Science at Utkal University.</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-neon">View Projects</a>
+                        <a href="#contact" class="btn btn-neon btn-outline">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <div class="profile-img">
+                        <img src="assets/MyImage2.jpg" alt="Profile">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-title">Turning ideas into digital reality</h3>
+                    <p class="about-desc">I'm a passionate computer science student with a focus on web development and Application Developer and emerging technologies. My journey began in high school when I built my first website and first app discovered the magic of turning code into visual art.</p>
+                    <p class="about-desc">Currently pursuing my degree, I specialize in creating responsive, user-friendly web applications and android applications using modern technologies. When I'm not coding, you'll find me exploring new tech trends, contributing to open-source projects, or participating in hackathons.</p>
+                    <a href="resume.pdf" class="btn btn-neon" download>Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (Grouped) -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">My <span class="text-gradient">Skills</span></h2>
+
+            <!-- Frontend Development -->
+            <div class="skills-category">
+                <h3 class="category-title">Frontend Development</h3>
+                <div class="skills-container">
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h4 class="skill-name">HTML5</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <h4 class="skill-name">CSS3</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <h4 class="skill-name">JavaScript</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                        <h4 class="skill-name">Bootstrap CSS</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <h4 class="skill-name">React</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Development -->
+            <div class="skills-category">
+                <h3 class="category-title">Backend Development</h3>
+                <div class="skills-container">
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <h4 class="skill-name">Node.js</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <h4 class="skill-name">Python</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h4 class="skill-name">Express.js</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fas fa-lock"></i></div>
+                        <h4 class="skill-name">JWT/Auth</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database & Dev Tools -->
+            <div class="skills-category">
+                <h3 class="category-title">Database & Tools</h3>
+                <div class="skills-container">
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4 class="skill-name">MySQL</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <h4 class="skill-name">Git</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fab fa-github"></i></div>
+                        <h4 class="skill-name">GitHub</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                        <h4 class="skill-name">Postman</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Designing Tools -->
+            <div class="skills-category">
+                <h3 class="category-title">Designing</h3>
+                <div class="skills-container">
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fas fa-pencil-ruler"></i></div>
+                        <h4 class="skill-name">Figma</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                        <h4 class="skill-name">Canva</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                        <h4 class="skill-name">Photoshop</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Android Development -->
+            <div class="skills-category">
+                <h3 class="category-title">Android Development</h3>
+                <div class="skills-container">
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fab fa-android"></i></div>
+                        <h4 class="skill-name">Java</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fab fa-android"></i></div>
+                        <h4 class="skill-name">Kotlin</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fab fa-android"></i></div>
+                        <h4 class="skill-name">Flutter</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h4 class="skill-name">XML</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                        <h4 class="skill-name">Firebase</h4>
+                    </div>
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4 class="skill-name">Android Studio</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My <span class="text-gradient">Projects</span></h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card project-card h-100">
+                        <div class="project-img">
+                            <img src="assets/MedicineShopManagementSystem.jpg" alt="Medicine Shop Management System">
+                        </div>
+
+                        <div class="project-content">
+                        <h3 class="project-title">Medicine Shop Management System</h3>
+                        <p class="project-desc">
+                            A desktop-based application built using Java and Swing to manage medical inventory, billing, customer records, and purchase history efficiently. Designed for small to medium-sized pharmacy businesses.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Java Swing</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JDBC</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card project-card h-100">
+                        <div class="project-img">
+                            <img src="assets/HealthAndFitnessTracker.jpg" alt="Health and Fitness Tracker">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Health & Fitness Tracker</h3>
+                            <p class="project-desc">Built using Data Science with Python to track health metrics like calories, steps, and sleep. Dashboard visualized using Power BI for insights and progress tracking.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">Data Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card project-card h-100">
+                        <div class="project-img">
+                            <img src="assets/AiMissingPersonFinder.jpg" alt="AI Missing Person Finder">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI Missing Person Finder</h3>
+                            <p class="project-desc">
+                                An AI-powered system built using Python that uses facial recognition and machine learning to identify and track missing persons using CCTV footage and social media images.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Face Recognition</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card project-card h-100">
+                        <div class="project-img">
+                            <img src="assets/WeatherForeastingApp.jpg" alt="Weather Forecasting App">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Forecasting App</h3>
+                            <p class="project-desc">
+                                A sleek Android app built using Java that displays real-time weather information such as temperature, humidity, wind speed, and 7-day forecasts using API integration and dynamic UI updates.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Android</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">OpenWeatherMap API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card project-card h-100">
+                        <div class="project-img">
+                            <img src="assets/portfolio.png" alt="Portfolio Website">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-desc">
+                                A responsive portfolio website designed to showcase my skills, projects, and certifications with smooth animations and dark-mode UI.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">Bootstrap CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card project-card h-100">
+                        <div class="project-img">
+                            <img src="assets/ASLTranslator.jpg" alt="ASL Translator">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">ASL Translator using Python</h3>
+                            <p class="project-desc">
+                                A real-time ASL-to-text translator that captures webcam input, detects hand gestures using MediaPipe, and translates sign language into readable text using a trained machine learning model.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">MediaPipe</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">MLP Classifier</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Education <span class="text-gradient">Journey</span></h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-date">2023 – Present</div>
+                        <h3 class="timeline-title">B.Sc. (Hons.) in Computer Science</h3>
+                        <p class="timeline-desc">Creative Techno College, Angul</p>
+                        <p class="timeline-desc">Pursuing degree with focus on Data Science, Web Technologies, Android Dvelopment and Artificial Intelligence.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-date">2021 – 2023</div>
+                        <h3 class="timeline-title">Higher Secondary Education (Science)</h3>
+                        <p class="timeline-desc">Kendriya Vidyalaya, Deogarh</p>
+                        <p class="timeline-desc">Completed with specialization in Computer Science(Self), Biology,Physics, and Mathematics.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-date">2011 – 2021</div>
+                        <h3 class="timeline-title">Schooling (CBSE)</h3>
+                        <p class="timeline-desc">Belpahar English Medium School, Jharsuguda</p>
+                        <p class="timeline-desc">Completed Class I to X with strong foundation in academics and digital skills.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="glass-card p-4 p-md-5 h-100">
+                        <form class="contact-form" action="https://formspree.io/f/xqalqonz" method="POST">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="mb-3">
+                                <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <!-- Anti-spam honeypot field -->
+                            <input type="text" name="_gotcha" style="display:none">
+                            <button type="submit" class="btn btn-neon">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info and Social Links -->
+                <div class="col-lg-6">
+                    <div class="glass-card p-4 p-md-5 h-100">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>Angul, Odisha</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>saswatsumandwibedy17@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <p>+91 6371891213</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/saswatgithub17" target="_blank" class="footer-social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/saswatsuman" target="_blank" class="footer-social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/brahmin_boy_saswat" target="_blank" class="footer-social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/916371891213" target="_blank" class="footer-social-link">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer>
+        <div class="footer-floating footer-floating-1"></div>
+        <div class="footer-floating footer-floating-2"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Saswat Suman Dwibedy</div>
+                <p class="footer-tagline">Creating innovative digital experiences with cutting-edge technology and design principles.</p>
+                <div class="footer-links">
+                    <a href="#hero" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#skills" class="footer-link">Skills</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#education" class="footer-link">Education</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/saswatgithub17" target="_blank" class="footer-social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/saswatsuman" target="_blank" class="footer-social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/brahmin_boy_saswat" target="_blank" class="footer-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/916371891213" target="_blank" class="footer-social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>
