@@ -33,7 +33,7 @@ export const Home: React.FC = () => {
               </Link>
               <button 
                 onClick={() => {
-                  window.open('assets/Saswat Suman Dwibedy Resume - Full Stack Developer.pdf', '_blank');
+                 window.open(`${import.meta.env.BASE_URL}resumes/Saswat_Suman_Dwibedy_Resume.pdf`,'_blank')
                 }}
                 className="glass px-8 py-3 rounded-xl font-bold uppercase tracking-widest border border-white/10 inline-flex items-center space-x-2 hover:bg-white/5 transition-colors"
               >

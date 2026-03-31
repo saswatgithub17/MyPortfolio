@@ -1,5 +1,6 @@
 import React from 'react';
 import { Download, Quote } from 'lucide-react';
+import.meta.env.BASE_URL
 
 export const About: React.FC = () => {
   const testimonials = [
@@ -24,7 +25,7 @@ export const About: React.FC = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-neo-blue to-neo-pink rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
               <div className="relative glass rounded-2xl overflow-hidden aspect-square">
                 <img 
-                  src="assets\MyImage2.jpg" 
+                  src={`${import.meta.env.BASE_URL}images/MyImage2.jpg`} 
                   alt="Profile" 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 />
