@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-neo-yellow: #ffea00;
+  --color-neo-pink: #ff00ea;
+  --color-neo-blue: #00f3ff;
+}
+
+@layer base {
+  :root {
+    --bg-primary: #0c0c14;
+    --bg-secondary: #070710;
+    --text-primary: #e6e6ff;
+    --text-secondary: #a0a0c0;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --neo-bg: #ffffff;
+    --neo-text: #000000;
+  }
+
+  .light {
+    --bg-primary: #f5f5f7;
+    --bg-secondary: #ffffff;
+    --text-primary: #1d1d1f;
+    --text-secondary: #86868b;
+    --glass-bg: rgba(0, 0, 0, 0.05);
+    --glass-border: rgba(0, 0, 0, 0.1);
+    --neo-bg: #000000;
+    --neo-text: #ffffff;
+  }
+
+  body {
+    @apply bg-[var(--bg-primary)] text-[var(--text-primary)] selection:bg-neo-blue selection:text-black transition-colors duration-300;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  /* Glassmorphism */
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    @apply shadow-xl;
+  }
+  
+  /* NeoBrutalism */
+  .neo-brutal {
+    background: var(--neo-bg);
+    color: var(--neo-text);
+    @apply border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none;
+  }
+  
+  /* Claymorphism */
+  .clay {
+    @apply bg-white/80 rounded-[30px] shadow-[inset_8px_16px_40px_rgba(0,0,0,0.25),inset_-8px_-8px_20px_rgba(255,255,255,0.5),10px_10px_20px_rgba(0,0,0,0.15)];
+  }
+  
+  /* Skeuomorphism */
+  .skeuo {
+    @apply bg-[#e0e0e0] rounded-2xl shadow-[20px_20px_60px_#bebebe,-20px_-20px_60px_#ffffff] text-gray-800;
+  }
+  
+  /* Liquid Glass Effect */
+  .liquid-glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .liquid-glass::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: liquid-move 10s infinite alternate;
+  }
+}
+
+@keyframes liquid-move {
+  0% { transform: translate(-10%, -10%) rotate(0deg); }
+  100% { transform: translate(10%, 10%) rotate(360deg); }
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00f3ff;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+  mix-blend-mode: difference;
+}
+
+.cursor-dot {
+  width: 4px;
+  height: 4px;
+  background: #ff00ea;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.05s ease;
+}
+
+/* AOS overrides */
+[data-aos] {
+  pointer-events: none;
+}
+.aos-animate {
+  pointer-events: auto;
+}
